@@ -34,7 +34,7 @@
 ╠═══════════════════════════════════════════════════════╣
 ║   Student Name   :  Mayur Makwana                     ║
 ║   Student ID     :  11391                             ║
-║   Set            :  A                                 ║
+║   Set            :  C                                 ║
 ║   Records        :  12 clean records                  ║
 ║   Pass Mark      :  score ≥ 50                        ║
 ║   Result         :  ✅ ANALYSIS COMPLETE              ║
