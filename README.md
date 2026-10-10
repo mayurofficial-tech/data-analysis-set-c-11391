@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://drive.google.com/file/d/1TgMthQFEPvx5IOLdh_IQd3r9P6Nd2k4b/view?usp=drive_link"><b>🎬 WATCH THE VIDEO WALKTHROUGH</b></a><br>
-  <sub>⏱ Duration: ___ minutes</sub>
+  <sub>⏱ Duration: 9:30 minutes</sub>
 </p>
 
 <p align="center">
