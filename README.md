@@ -1,93 +1,172 @@
-# Data Analysis Practical — Set A
+<p align="center">
+  <img src="assets/report_header.svg" alt="Training Performance Analysis" width="100%" />
+</p>
 
-**Student Name:** Mayur Makwana
-**Student ID:** 11391
-**Set:** Set A
+<p align="center">
+  <a href="YOUR_VIDEO_LINK_HERE"><b>🎬 WATCH THE VIDEO WALKTHROUGH</b></a><br>
+  <sub>⏱ Duration: ___ minutes</sub>
+</p>
 
-## 1. Objective
+<p align="center">
+  <img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL_8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
+</p>
 
-Analyze the given data, clean duplicate records, calculate required metrics,
-and answer the business questions using Excel, SQL, Python and Power BI.
+---
 
-## 2. Business Questions
+## 🖼️ POWER BI DASHBOARD
 
-1. Which course needs the most academic support
-2. how does performance differ across batches?
+<p align="center">
+  <img src="outputs/powerbi_dashboard.png" alt="Power BI Dashboard" width="100%" />
+</p>
 
-## 3. Dataset
+---
 
-- data/raw/assessments.csv — Fact data
-- data/raw/courses.csv — Lookup data
+## 🎓 STUDENT REPORT CARD
 
-Duplicate records were removed, leaving 12 clean records.
+```text
+╔═══════════════════════════════════════════════════════╗
+║          TRAINING PERFORMANCE ANALYSIS                ║
+║          Data Analysis Practical · Set A              ║
+╠═══════════════════════════════════════════════════════╣
+║   Student Name   :  Mayur Makwana                     ║
+║   Student ID     :  11391                             ║
+║   Set            :  A                                 ║
+║   Records        :  12 clean records                  ║
+║   Pass Mark      :  score ≥ 50                        ║
+║   Result         :  ✅ ANALYSIS COMPLETE              ║
+╚═══════════════════════════════════════════════════════╝
+```
 
-## 4. Cleaning & Metrics
+---
 
-- Removed the exact duplicate row.
-- Joined data using course_id.
-- pass_flag = (score >= 50)
-- breach_rate = pass_flag_count / all records × 100
+## 📘 OBJECTIVE
 
-## 5. Tools
+Analyze the given data, clean duplicate records, calculate the required metrics, and answer the business questions using **Excel, SQL, Python and Power BI**.
 
-- Excel
-- MySQL 8.0
-- Python
-- pandas
-- matplotlib
-- Power BI
+---
 
-## 6. Project Structure
+## ✏️ EXAM QUESTIONS
 
-- excel/ — Excel analysis
-- sql/ — SQL setup and queries
-- python/ — Python analysis
-- powerbi/ — Power BI dashboard
-- outputs/ — analysis results and charts
+> **Q1.** Which course needs the most academic support?
+>
+> **Q2.** How does performance differ across batches?
 
-## 7. Setup & Run
+---
 
-### SQL
+## 📚 SYLLABUS (Dataset)
+
+| Subject | File | Type |
+|---|---|---|
+| 📝 Assessments | `data/raw/assessments.csv` | Fact data |
+| 📖 Courses | `data/raw/courses.csv` | Lookup data |
+
+Duplicate records were removed, leaving **12 clean records**.
+
+---
+
+## 🧮 GRADING SCHEME (Cleaning & Metrics)
+
+**Cleaning**
+
+1. Removed the exact duplicate row
+2. Joined data using `course_id`
+
+**Formulas**
+
+```text
+pass_flag = (score >= 50)
+pass_rate = pass_flag_count / all_records × 100
+```
+
+---
+
+## 🖊️ TEACHER'S REMARKS (Findings)
+
+| | Remark |
+|:-:|---|
+| **1** | **Python needs the most academic support.** Its passing rate is **33.33%**, the lowest compared to every other course. |
+| **2** | **The Weekend batch performs weakest.** It has only **2 passes**, the lowest compared to the Morning and Evening batches. |
+
+> 📌 **Recommendation:**
+> 1. Increase the number of Python classes and focus on improving its passing rate.
+> 2. Conduct more classes in the Morning and Evening batches.
+
+---
+
+## 🔍 MODERATION (Cross-tool Reconciliation)
+
+**Aggregate checked:** average score (Jan)
+
+```text
+ Excel      ██████████████████████████  55
+ SQL        ██████████████████████████  55
+ Python     ██████████████████████████  55
+ Power BI   ██████████████████████████  55
+```
+
+✅ All four tools agree. Any difference is only due to rounding.
+
+---
+
+## 📖 REVISION GUIDE (Setup & Run)
+
+<details>
+<summary><b>🐬 SQL</b></summary>
+
 Run `sql/setup.sql` first, then `sql/queries.sql`.
+</details>
 
-### Python
+<details>
+<summary><b>🐍 Python</b></summary>
+
 Install packages:
 
-`pip install -r requirements.txt`
+```bash
+pip install -r requirements.txt
+```
 
-Run from repository root:
+Run from the repository root:
 
-`python python/analysis.py`
+```bash
+python python/analysis.py
+```
+</details>
 
-### Excel
+<details>
+<summary><b>📗 Excel</b></summary>
+
 Open `excel/analysis.xlsx`.
+</details>
 
-### Power BI
+<details>
+<summary><b>📊 Power BI</b></summary>
+
 Open `powerbi/dashboard.pbix` and update the CSV path if required.
+</details>
 
-## 8. Findings
+---
 
-- Finding 1: Python Need academic support brcouse its passing rate is 33.33% which losest comper to any anther couse
-- Finding 2: weekend have 2 pass count which loaset couper to morning and evening
+## 🎒 SCHOOL BAG (Project Structure)
 
-Recommendation: incress the python classes and focased on improve the passing rate of python and one more is cnduct more class in morning and evening .
+```text
+📁 training-performance-analysis
+ ├─ 📁 data/raw     assessments.csv, courses.csv
+ ├─ 📁 excel        analysis.xlsx
+ ├─ 📁 sql          setup.sql, queries.sql
+ ├─ 📁 python       analysis.py
+ ├─ 📁 powerbi      dashboard.pbix
+ ├─ 📁 outputs      analysis results and charts
+ ├─ 📁 assets       report_header.svg
+ └─ 📄 requirements.txt
+```
 
-## 9. Cross-tool Reconciliation
+---
 
-Aggregate checked: average score by jan
-
-Excel: 55  
-SQL: 55  
-Python: 55  
-Power BI: 55
-
-The values match, with any differences due only to rounding.
-
-## 10. Video
-
-Video URL: __________________
-Duration: ______ minutes
-
-## 11. Authorship
-
-All work in this repository is my own except where cited.
+<p align="center">
+  <b>✍️ Student's Signature:</b> Mayur Makwana · ID 11391<br>
+  <sub>All work in this repository is my own except where cited.</sub>
+</p>
